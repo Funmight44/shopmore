@@ -85,11 +85,7 @@ function handleChange(event){
                             <input type="number" name="phone"  value={user.phone} onChange={handleChange}/>
                         </div>
 
-                        {/* <div>
-                            <label htmlFor="code">Code</label>
-                            <input type="number" name="month" id="code"/>
-                            <input type="number" name="year" id="code"/>
-                        </div> */}
+                        
                         <p>total: ${total}</p>
                         {error && <p>{error}</p>}
                         <button type="submit" >{submiting ? "Processing Payment..." : "Pay Now"}</button>

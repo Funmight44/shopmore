@@ -14,7 +14,7 @@ const OrderSuccess = ({order}) => {
             <div>
                 <p>Your order is confirmed.</p>
                 <p>Please check your mail ({order.email}) for the eBook.</p>
-                <p>Payment ID: xyz_123456789</p>
+                <p>Payment ID: xyz_123456789</p>      
             </div>
             <Link to="/" type="button">Continue Shopping <i className="ml-2 bi bi-cart"></i></Link>
         </section>
