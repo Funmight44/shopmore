@@ -1,18 +1,19 @@
 {
   "femaleCate": [
     {
-      "id": "1",
-      "imgpath": "/images/female shoe.jpg",
-      "title": "High Heel",
+      "id": "m1",
+      "imgpath": "/images/IMG-20241204-WA0045.jpg",
+      "title": "side bag",
       "price": "20",
       "size": [
         "S",
         "L",
         "M"
-      ]
+      ],
+      "inStock": true
     },
     {
-      "id": "2",
+      "id": "m2",
       "imgpath": "/images/female top.jpg",
       "title": "Quality Female Top",
       "price": "20",
@@ -21,10 +22,11 @@
         "L",
         "M"
       ],
-      "description": "Bodycon gown made with high-stretch fabric."
+      "description": "Bodycon gown made with high-stretch fabric.",
+      "inStock": false
     },
     {
-      "id": "3",
+      "id": "m3",
       "imgpath": "/images/female hoodie.jpg",
       "title": "Quality Hoodie with Joggers",
       "price": "30",
@@ -33,16 +35,18 @@
         "s",
         "L",
         "M"
-      ]
+      ],
+      "inStock": true
     },
     {
-      "id": "4",
+      "id": "m4",
       "imgpath": "/images/roundneck.jpg",
       "title": "Quality Unisex Round Neck",
-      "price": "20"
+      "price": "20",
+      "inStock": false
     },
     {
-      "id": "5",
+      "id": "m5",
       "imgpath": "/images/female jean.jpg",
       "title": "Quality Fitted Female Jean",
       "price": "20",
@@ -51,24 +55,27 @@
         "s",
         "L",
         "M"
-      ]
+      ],
+      "inStock": false
     }
   ],
   "menCate": [
     {
-      "id": "1",
+      "id": "f1",
       "imgpath": "/images/men joggers.jpg",
-      "title": "Sneaker",
-      "price": "20"
+      "title": "Joggers",
+      "price": "20",
+      "inStock": true
     },
     {
-      "id": "2",
+      "id": "f2",
       "imgpath": "/images/jean.jpg",
       "title": "Jean",
-      "price": "10"
+      "price": "10",
+      "inStock": true
     },
     {
-      "id": "3",
+      "id": "f3",
       "imgpath": "/images/shirt.jpg",
       "title": "Shirt",
       "price": "15",
@@ -77,28 +84,31 @@
         "M",
         "L",
         "XL"
-      ]
+      ],
+      "inStock": false
     },
     {
-      "id": "4",
-      "imgpath": "/images/white joggers.jpg",
-      "title": "Quality Joggers",
-      "price": "20"
-    },
-    {
-      "id": "5",
-      "imgpath": "/images/sneaker2.jpg",
+      "id": "f4",
+      "imgpath": "/images/black sneakers.jpg",
       "title": "Sneaker",
+      "price": "20",
+      "inStock": false
+    },
+    {
+      "id": "f5",
+      "imgpath": "/images/black top.jpg",
+      "title": "Black top",
       "price": "20",
       "description": "Casual sneaker that complements every outfit.",
       "size": [
         "34",
         "40",
         "44"
-      ]
+      ],
+      "inStock": false
     },
     {
-      "id": "6",
+      "id": "f6",
       "imgpath": "/images/sneaker3.jpg",
       "title": "Sneaker",
       "price": "40",
@@ -107,186 +117,275 @@
         "34",
         "40",
         "44"
-      ]
+      ],
+      "inStock": false
     }
   ],
   "mixedCategory": [
     {
-      "id": "1",
-      "imgpath": "/images/IMG-20250315-WA0167.jpg",
-      "title": "top",
-      "price": "10"
+      "id": "x1",
+      "imgpath": "/images/jean.jpg",
+      "title": "Jean",
+      "price": "10",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "2",
+      "id": "x2",
       "imgpath": "/images/IMG-20250120-WA0170.jpg",
       "title": "Quality Vintage Shirt",
-      "price": "15"
+      "price": "15",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "3",
+      "id": "x3",
       "imgpath": "/images/IMG-20250127-WA0347.jpg",
       "title": "Quality Female Sandal",
-      "price": "20"
+      "price": "20",
+      "inStock": false,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "4",
+      "id": "x4",
       "imgpath": "/images/IMG-20250227-WA0147.jpg",
       "title": "Quality Female Cover Shoe",
-      "price": "10"
+      "price": "10",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "5",
-      "imgpath": "/images/IMG-20250318-WA0148.jpg",
-      "title": "Sneaker",
-      "price": "20"
+      "id": "x5",
+      "imgpath": "/images/IMG-20250127-WA0347.jpg",
+      "title": "Quality Female Sandal",
+      "price": "20",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "6",
+      "id": "x6",
       "imgpath": "/images/IMG-20250120-WA0170.jpg",
-      "title": "Quality Stretchy Short Gown",
-      "price": "20"
+      "title": "Vintage Shirt",
+      "price": "20",
+      "inStock": false,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "7",
+      "id": "x7",
       "imgpath": "/images/IMG-20250311-WA0325.jpg",
       "title": "Quality Stretchy Short Gown",
-      "price": "10"
+      "price": "10",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     },
     {
-      "id": "8",
+      "id": "x8",
       "imgpath": "/images/IMG-20241204-WA0045.jpg",
       "title": "Quality bags",
-      "price": "20"
+      "price": "20",
+      "inStock": false,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    } 
+  ],
+  "kids": [
+    {
+      "id": "k1",
+      "imgpath": "/images/baby boy.jpg",
+      "title": "Quality two piece dress",
+      "price": "15",
+      "inStock": false,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "id": "k2",
+      "imgpath": "/images/baby gown pink.jpg",
+      "title": "Quality pink gown",
+      "price": "15",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    }, 
+    {
+      "id": "k3",
+      "imgpath": "/images/baby jean.jpg",
+      "title": "Quality baby jean",
+      "price": "15",
+      "inStock": false,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    }, 
+    {
+      "id": "k4",
+      "imgpath": "/images/baby up and down.jpg",
+      "title": "Quality two piece dress",
+      "price": "12",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    }, 
+    {
+      "id": "k5",
+      "imgpath": "/images/baby gown white.jpg",
+      "title": "Quality white gown",
+      "price": "30",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    }, 
+    {
+      "id": "k6",
+      "imgpath": "/images/jumpsuit jean.jpg",
+      "title": "Quality jumpsuit for 12yrs",
+      "price": "20",
+      "inStock": true,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
+    }, 
+    {
+      "id": "k7",
+      "imgpath": "/images/jean and top.jpg",
+      "title": "Quality unisex top and jean",
+      "price": "15",
+      "inStock": false,
+      "size": [
+        "SM",
+        "L",
+        "M"
+      ]
     }
   ],
   "user": {},
   "order": [
     {
-      "id": "7191",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo@gmail.com",
-      "phone": "07067325018",
-      "address": "Sango Ota, Ogun state",
+      "id": "e5f6",
+      "fullName": "Funmi",
+      "email": "akano@gmail.com",
+      "phone": "090871672",
+      "address": "20 avenue street sango",
       "product": [
         {
-          "id": 1,
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        },
-        {
-          "id": 2,
+          "id": "x1",
           "imgpath": "/images/jean.jpg",
           "title": "Jean",
-          "price": "10"
-        }
-      ],
-      "date": "2025-07-02T15:58:24.230Z",
-      "status": "pending"
-    },
-    {
-      "id": "47fe",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
+          "price": "10",
+          "inStock": true,
+          "size": [
+            "SM",
+            "L",
+            "M"
+          ]
         },
         {
-          "id": "1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/white joggers.jpg",
-          "title": "Quality Joggers",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T10:15:24.348Z",
-      "status": "pending"
-    },
-    {
-      "id": "e4bf",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/white joggers.jpg",
-          "title": "Quality Joggers",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T10:15:44.075Z",
-      "status": "pending"
-    },
-    {
-      "id": "f1c0",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/white joggers.jpg",
-          "title": "Quality Joggers",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T10:15:47.230Z",
-      "status": "pending"
-    },
-    {
-      "id": "f485",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo@gmail.com",
-      "phone": "07067325018",
-      "address": "Sango Ota, Ogun state",
-      "product": [
-        {
-          "id": "2",
+          "id": "x2",
           "imgpath": "/images/IMG-20250120-WA0170.jpg",
           "title": "Quality Vintage Shirt",
-          "price": "15"
+          "price": "15",
+          "inStock": true,
+          "size": [
+            "SM",
+            "L",
+            "M"
+          ]
+        }
+      ],
+      "date": "2025-07-10T14:34:18.091Z",
+      "status": "pending"
+    },
+    {
+      "id": "3537",
+      "fullName": "Funmi",
+      "email": "akano@gmail.com",
+      "phone": "090871672",
+      "address": "20 avenue street sango",
+      "product": [
+        {
+          "id": "x1",
+          "imgpath": "/images/jean.jpg",
+          "title": "Jean",
+          "price": "10",
+          "inStock": true,
+          "size": [
+            "SM",
+            "L",
+            "M"
+          ]
         },
         {
-          "id": "2",
+          "id": "x2",
+          "imgpath": "/images/IMG-20250120-WA0170.jpg",
+          "title": "Quality Vintage Shirt",
+          "price": "15",
+          "inStock": true,
+          "size": [
+            "SM",
+            "L",
+            "M"
+          ]
+        }
+      ],
+      "date": "2025-07-10T14:34:19.661Z",
+      "status": "pending"
+    },
+    {
+      "id": "7643",
+      "fullName": "Funmi",
+      "email": "akano@gmail.com",
+      "phone": "09076845632",
+      "address": "20 avenue street sango",
+      "product": [
+        {
+          "id": "m2",
           "imgpath": "/images/female top.jpg",
           "title": "Quality Female Top",
           "price": "20",
@@ -295,364 +394,18 @@
             "L",
             "M"
           ],
-          "description": "Bodycon gown made with high-stretch fabric."
+          "description": "Bodycon gown made with high-stretch fabric.",
+          "inStock": false
         },
         {
-          "id": "4",
+          "id": "m4",
           "imgpath": "/images/roundneck.jpg",
           "title": "Quality Unisex Round Neck",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T10:23:48.109Z",
-      "status": "pending"
-    },
-    {
-      "id": "3520",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo@gmail.com",
-      "phone": "07067325018",
-      "address": "Sango Ota, Ogun state",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15"
-        },
-        {
-          "id": "2",
-          "imgpath": "/images/female top.jpg",
-          "title": "Quality Female Top",
           "price": "20",
-          "size": [
-            "S",
-            "L",
-            "M"
-          ],
-          "description": "Bodycon gown made with high-stretch fabric."
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/roundneck.jpg",
-          "title": "Quality Unisex Round Neck",
-          "price": "20"
+          "inStock": false
         }
       ],
-      "date": "2025-07-04T10:23:52.615Z",
-      "status": "pending"
-    },
-    {
-      "id": "25d9",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15"
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/IMG-20250127-WA0347.jpg",
-          "title": "Quality Female Sandal",
-          "price": "20"
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/IMG-20250227-WA0147.jpg",
-          "title": "Quality Female Cover Shoe",
-          "price": "10"
-        }
-      ],
-      "date": "2025-07-04T13:26:09.958Z",
-      "status": "pending"
-    },
-    {
-      "id": "1edd",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T13:29:47.272Z",
-      "status": "pending"
-    },
-    {
-      "id": "f990",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T13:29:49.942Z",
-      "status": "pending"
-    },
-    {
-      "id": "ecd7",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Sneaker",
-          "price": "20"
-        }
-      ],
-      "date": "2025-07-04T13:29:49.943Z",
-      "status": "pending"
-    },
-    {
-      "id": "58b9",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15"
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/IMG-20250127-WA0347.jpg",
-          "title": "Quality Female Sandal",
-          "price": "20"
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/IMG-20250227-WA0147.jpg",
-          "title": "Quality Female Cover Shoe",
-          "price": "10"
-        }
-      ],
-      "date": "2025-07-04T13:44:33.726Z",
-      "status": "pending"
-    },
-    {
-      "id": "03a2",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15"
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/IMG-20250127-WA0347.jpg",
-          "title": "Quality Female Sandal",
-          "price": "20"
-        },
-        {
-          "id": "4",
-          "imgpath": "/images/IMG-20250227-WA0147.jpg",
-          "title": "Quality Female Cover Shoe",
-          "price": "10"
-        },
-        {
-          "id": "2",
-          "imgpath": "/images/female top.jpg",
-          "title": "Quality Female Top",
-          "price": "20",
-          "size": [
-            "S",
-            "L",
-            "M"
-          ],
-          "description": "Bodycon gown made with high-stretch fabric."
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/female hoodie.jpg",
-          "title": "Quality Hoodie with Joggers",
-          "price": "30",
-          "description": "Two-piece hoodie and joggers set for a comfortable and stylish look.",
-          "size": [
-            "s",
-            "L",
-            "M"
-          ]
-        }
-      ],
-      "date": "2025-07-04T13:52:51.678Z",
-      "status": "pending"
-    },
-    {
-      "id": "a6e4",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "1",
-          "imgpath": "/images/IMG-20250315-WA0167.jpg",
-          "title": "top",
-          "price": "10"
-        },
-        {
-          "id": "2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15"
-        }
-      ],
-      "date": "2025-07-04T13:58:47.991Z",
-      "status": "pending"
-    },
-    {
-      "id": "1cc6",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "1",
-          "imgpath": "/images/IMG-20250315-WA0167.jpg",
-          "title": "top",
-          "price": "10"
-        },
-        {
-          "id": "2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15"
-        }
-      ],
-      "date": "2025-07-04T14:02:37.384Z",
-      "status": "pending"
-    },
-    {
-      "id": "4bed",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/shirt.jpg",
-          "title": "Shirt",
-          "price": "15",
-          "description": "Formal shirt ideal for office or events.",
-          "size": [
-            "M",
-            "L",
-            "XL"
-          ]
-        }
-      ],
-      "date": "2025-07-04T14:17:34.374Z",
-      "status": "pending"
-    },
-    {
-      "id": "4eaa",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/shirt.jpg",
-          "title": "Shirt",
-          "price": "15",
-          "description": "Formal shirt ideal for office or events.",
-          "size": [
-            "M",
-            "L",
-            "XL"
-          ]
-        }
-      ],
-      "date": "2025-07-04T14:17:36.338Z",
-      "status": "pending"
-    },
-    {
-      "id": "b08c",
-      "fullName": "Akano Funmi",
-      "email": "akanofunmilayo44@gmail.com",
-      "phone": "07067325018",
-      "address": "ayodele 23",
-      "product": [
-        {
-          "id": "2",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10"
-        },
-        {
-          "id": "3",
-          "imgpath": "/images/shirt.jpg",
-          "title": "Shirt",
-          "price": "15",
-          "description": "Formal shirt ideal for office or events.",
-          "size": [
-            "M",
-            "L",
-            "XL"
-          ]
-        }
-      ],
-      "date": "2025-07-04T14:21:53.078Z",
+      "date": "2025-07-11T13:41:37.262Z",
       "status": "pending"
     }
   ]

@@ -46,8 +46,6 @@ function handleChange(event){
             body: JSON.stringify(order)
         })
         if(!resp.ok) throw new Error("fail to save order");
-    
-        alert("Payement successfull. Order Placed")
         
         navigate("/order", {state: {status: "success", order}})
     }catch(error){

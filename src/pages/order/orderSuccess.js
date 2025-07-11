@@ -1,24 +1,26 @@
 import { Link } from "react-router-dom";
 
 
+const OrderSuccess = ({ order }) => {
+  if (!order) return <p>Order Information is missing</p>;
 
-const OrderSuccess = ({order}) => {
-    if(!order) return <p>Order Information is missing</p>
+  return (
+    <section className="order-success">
+      <div className="order-box">
+        <h2>✅ Order Confirmed!</h2>
+        <p className="greeting">Thank you <strong>{order.fullName}</strong> for your purchase!</p>
+        <div className="order-details">
+          <p><strong>Order ID:</strong> {order.id || "AUTO_GENERATED"}</p>
+          <p><strong>Payment ID:</strong> xyz_123456789</p>
+          <p><strong>Delivery Email:</strong> {order.email}</p>
+          <p className="note">Please check your inbox for your products and order receipt.</p>
+        </div>
+        <Link to="/" className="btn-continue">
+          <i className="bi bi-cart"></i> Continue Shopping
+        </Link>
+      </div>
+    </section>
+  );
+};
 
-    return ( 
-         <section className="order-success">
-            <div>
-                <p>Thank you {order.fullName} for the order!</p>
-                <p>Your Order ID: {order.id}</p>          
-            </div>
-            <div>
-                <p>Your order is confirmed.</p>
-                <p>Please check your mail ({order.email}) for the eBook.</p>
-                <p>Payment ID: xyz_123456789</p>      
-            </div>
-            <Link to="/" type="button">Continue Shopping <i className="ml-2 bi bi-cart"></i></Link>
-        </section>
-     );
-}
- 
 export default OrderSuccess;
