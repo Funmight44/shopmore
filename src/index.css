@@ -41,18 +41,17 @@ header .logo-div{
   align-items: center;
 }
 
-header nav{
+nav{
   display: inline-flex;
   gap:20px;
   align-items: center;
 }
 
-header nav a{
+nav a{
   color: #777;
   text-decoration: none;
 }
-
-header nav a:hover{
+nav a:hover{
   color: black;
 }
 
@@ -131,6 +130,47 @@ header .actions  .cart-div span{
   left: 20px;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+@media (max-width: 768px){
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 40%;
+    background: #fff;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  nav.show-nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+   .search-div input{
+    padding: 5px 10px ;
+    width: 80%;
+  }
+
+  header .logo-div h2{
+      font-size: 20px;
+  }
+}
 
 
 /* hero style */
@@ -168,17 +208,6 @@ header .actions  .cart-div span{
 
 /*rgb(196, 14, 14);*/
 
-
-
-/* .hero-text-down p{
-  color: white;
-  font-weight: 700;
-  font-size: 25px;
-  width: 550px;
-  margin: auto;
-  line-height: 1.5;
-} */
-
 .hero-text .shop-btn{
   padding: 20px 30px;
   border-radius: 20px;
@@ -205,6 +234,22 @@ header .actions  .cart-div span{
   font-weight: 800;
   text-align: center;
   color: rgba(226, 43, 76);
+}
+
+
+@media (max-width: 768px){
+  .hero-text .hero-text-top h3{
+      font-size: 20px;
+      font-weight: 800;
+      width: 330px;
+      margin-bottom: 10px;
+}
+
+.hero-text .shop-btn{
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
 }
 
 
@@ -237,7 +282,7 @@ header .actions  .cart-div span{
  }
 
  .cake-advert h3, .deco-advert h3{
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 20px;
   color: rgb(226, 43, 76) ;
  }
@@ -245,11 +290,49 @@ header .actions  .cart-div span{
  .cake-advert p, .deco-advert p{
   font-family: sans-serif;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 18px;
+  
  }
 
  
+@media (max-width: 768px){
+  .services .cake-advert, .deco-advert{
+    flex-basis: 100%;
+    margin: 10px;
+ }
 
+ .cake-advert p, .deco-advert p{
+    font-size: 16px;
+ }
+
+ .cake-service-desc, .decoration-service-desc{
+  flex-direction: column;
+}
+
+.cake-service-desc  .cake-img, .decoration-service-desc .deco-img{
+   flex-basis: 100%;
+   margin: 10px;
+ }
+}
+
+/* features */
+.features{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-div{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px){
+  .features{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 
 /* card style */
@@ -334,6 +417,7 @@ header .actions  .cart-div span{
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 
@@ -421,19 +505,40 @@ header .actions  .cart-div span{
   background-color: #d32f2f;
 }
 
+.quantity-btns{
+  display: flex;
+  gap: 20px;
+}
+
+.quantity-btns .plus-btn, .minus-btn{
+  outline: 0;
+  border: 0;
+  background-color: #777;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 @media (max-width: 768px) {
   .product-detail-card {
     flex-direction: column;
     align-items: center;
   }
 
-  .product-info {
+  /* .product-info {
     text-align: center;
-  }
+  } */
 
   .action-buttons {
     justify-content: center;
+
   }
+
+  .quantity-btns{
+    justify-self: center;
+}
+
+
 }
 
 
@@ -479,6 +584,17 @@ header .actions  .cart-div span{
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+}
+
+@media screen and (max-width: 680px) {
+  .kids .kids-desc{
+    width: 70%;
+    font-size: 17px;
+  }
+
+  .kids h2{
+    font-size: 25px;
+  }
 }
 
 /* footer style */

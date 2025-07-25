@@ -9,7 +9,9 @@ const Header = () => {
     const [cartToggle, setCartToggle] = useState(false)
     const [searchParams] = useSearchParams();
     const navigate = useNavigate()
-    const [query, setQuery] = useState(searchParams.get("query") || "")
+    const [query, setQuery] = useState(searchParams.get("query") || "");
+
+    const [showNav, setShowNav] = useState(false)
     
 
     console.log("Query from searchParams:", query);
@@ -29,17 +31,21 @@ const Header = () => {
                 <h2>Lahyor Ventures</h2> 
             </div>
 
-            <nav>
-                <Link to="/"><p>Home</p></Link>  
-                <Link to="men"><p>Men</p></Link>
-                <Link to="women"><p>Women</p></Link>
-                <Link to="kids"><p>Kids</p></Link>
-            </nav>
+            <nav  className={showNav ? "show-nav" : ''}>
+                <Link to="/" onClick={() => setShowNav(false)}><p>Home</p></Link>  
+                <Link to="men" onClick={() => setShowNav(false)}><p>Men</p></Link>
+                <Link to="women" onClick={() => setShowNav(false)}><p>Women</p></Link>
+                <Link to="kids" onClick={() => setShowNav(false)}><p>Kids</p></Link>
+           
+                <form className='search-div' onSubmit={handleSubmit}>
+                    <input type='text' placeholder='search' value={query} onChange={(e) => setQuery(e.target.value)}/>
+                    <button type='submit' > <i class="bi bi-search"></i></button>
+                </form>
+             </nav>
 
-            <form className='search-div' onSubmit={handleSubmit}>
-              <input type='text' placeholder='search' value={query} onChange={(e) => setQuery(e.target.value)}/>
-              <button type='submit' > <i class="bi bi-search"></i></button>
-            </form>
+            <button className="menu-icon" onClick={() => setShowNav(!showNav)}>
+                   <i className="bi bi-list"></i>
+            </button>
 
             <div className='actions'>
                 <i class="bi bi-balloon-heart"></i>

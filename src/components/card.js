@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const Card = ({item, addToCart, category}) => {
     return (
         <>
-            
             <div className="card">
                 <Link to={`/products/${category}/${item.id}`}><img src={item.imgpath} alt="jean"/></Link>
                 <p>{item.title}</p>
@@ -14,9 +13,6 @@ const Card = ({item, addToCart, category}) => {
                     {/* <button><i class="bi bi-trash"></i></button> */}
                 </div>
             </div>
-           
-
-
         </>
      );
 }

@@ -3,6 +3,7 @@ import FAQ from "../components/FAQ";
 import NewArrivals from "./newArrivals"
 import UseTitle from "../hooks/useTitle";
 import { Link } from "react-router-dom";
+import Features from "../components/features";
 
 const Hero = () => {
    UseTitle("hero session")
@@ -17,9 +18,10 @@ const Hero = () => {
                 </div>
                
                <Link to="allProducts"><button className="shop-btn">Shop Now</button></Link> 
-            </div>
+            </div>  
         </div>
             <Services/>
+            <Features/>
             <NewArrivals/>
             <FAQ/>
         </>
