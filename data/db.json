@@ -14,7 +14,7 @@
     },
     {
       "id": "m2",
-      "imgpath": "/images/female top.jpg",
+      "imgpath": "/images/female-top.jpg",
       "title": "Quality Female Top",
       "price": "20",
       "size": [
@@ -27,7 +27,7 @@
     },
     {
       "id": "m3",
-      "imgpath": "/images/female hoodie.jpg",
+      "imgpath": "/images/female-hoodie.jpg",
       "title": "Quality Hoodie with Joggers",
       "price": "30",
       "description": "Two-piece hoodie and joggers set for a comfortable and stylish look.",
@@ -47,7 +47,7 @@
     },
     {
       "id": "m5",
-      "imgpath": "/images/female jean.jpg",
+      "imgpath": "/images/female-jean.jpg",
       "title": "Quality Fitted Female Jean",
       "price": "20",
       "description": "Comfortable denim jeans with a modern fit.",
@@ -62,7 +62,7 @@
   "menCate": [
     {
       "id": "f1",
-      "imgpath": "/images/men joggers.jpg",
+      "imgpath": "/images/men-joggers.jpg",
       "title": "Joggers",
       "price": "20",
       "inStock": true
@@ -89,14 +89,14 @@
     },
     {
       "id": "f4",
-      "imgpath": "/images/black sneakers.jpg",
+      "imgpath": "/images/black-sneakers.jpg",
       "title": "Sneaker",
       "price": "20",
       "inStock": false
     },
     {
       "id": "f5",
-      "imgpath": "/images/black top.jpg",
+      "imgpath": "/images/black-top.jpg",
       "title": "Black top",
       "price": "20",
       "description": "Casual sneaker that complements every outfit.",
@@ -222,19 +222,20 @@
   "kids": [
     {
       "id": "k1",
-      "imgpath": "/images/baby boy.jpg",
+      "imgpath": "/images/baby-boy.jpg",
       "title": "Quality two piece dress",
       "price": "15",
       "inStock": false,
       "size": [
         "SM",
         "L",
+
         "M"
       ]
     },
     {
       "id": "k2",
-      "imgpath": "/images/baby gown pink.jpg",
+      "imgpath": "/images/baby-gown-pink.jpg",
       "title": "Quality pink gown",
       "price": "15",
       "inStock": true,
@@ -246,7 +247,7 @@
     },
     {
       "id": "k3",
-      "imgpath": "/images/baby jean.jpg",
+      "imgpath": "/images/baby-jean.jpg",
       "title": "Quality baby jean",
       "price": "15",
       "inStock": false,
@@ -258,7 +259,7 @@
     },
     {
       "id": "k4",
-      "imgpath": "/images/baby up and down.jpg",
+      "imgpath": "/images/baby-up-and-down.jpg",
       "title": "Quality two piece dress",
       "price": "12",
       "inStock": true,
@@ -270,7 +271,7 @@
     },
     {
       "id": "k5",
-      "imgpath": "/images/baby gown white.jpg",
+      "imgpath": "/images/baby-gown-white.jpg",
       "title": "Quality white gown",
       "price": "30",
       "inStock": true,
@@ -282,7 +283,7 @@
     },
     {
       "id": "k6",
-      "imgpath": "/images/jumpsuit jean.jpg",
+      "imgpath": "/images/jumpsuit-jean.jpg",
       "title": "Quality jumpsuit for 12yrs",
       "price": "20",
       "inStock": true,
@@ -294,7 +295,7 @@
     },
     {
       "id": "k7",
-      "imgpath": "/images/jean and top.jpg",
+      "imgpath": "/images/jean-and-top.jpg",
       "title": "Quality unisex top and jean",
       "price": "15",
       "inStock": false,
@@ -306,248 +307,5 @@
     }
   ],
   "user": {},
-  "order": [
-    {
-      "id": "e5f6",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "090871672",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "x1",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10",
-          "inStock": true,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ]
-        },
-        {
-          "id": "x2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15",
-          "inStock": true,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ]
-        }
-      ],
-      "date": "2025-07-10T14:34:18.091Z",
-      "status": "pending"
-    },
-    {
-      "id": "3537",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "090871672",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "x1",
-          "imgpath": "/images/jean.jpg",
-          "title": "Jean",
-          "price": "10",
-          "inStock": true,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ]
-        },
-        {
-          "id": "x2",
-          "imgpath": "/images/IMG-20250120-WA0170.jpg",
-          "title": "Quality Vintage Shirt",
-          "price": "15",
-          "inStock": true,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ]
-        }
-      ],
-      "date": "2025-07-10T14:34:19.661Z",
-      "status": "pending"
-    },
-    {
-      "id": "7643",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "09076845632",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "m2",
-          "imgpath": "/images/female top.jpg",
-          "title": "Quality Female Top",
-          "price": "20",
-          "size": [
-            "S",
-            "L",
-            "M"
-          ],
-          "description": "Bodycon gown made with high-stretch fabric.",
-          "inStock": false
-        },
-        {
-          "id": "m4",
-          "imgpath": "/images/roundneck.jpg",
-          "title": "Quality Unisex Round Neck",
-          "price": "20",
-          "inStock": false
-        }
-      ],
-      "date": "2025-07-11T13:41:37.262Z",
-      "status": "pending"
-    },
-    {
-      "id": "68e2",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "90793451343",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "m2",
-          "imgpath": "/images/female top.jpg",
-          "title": "Quality Female Top",
-          "price": "20",
-          "size": [
-            "S",
-            "L",
-            "M"
-          ],
-          "description": "Bodycon gown made with high-stretch fabric.",
-          "inStock": false
-        }
-      ],
-      "date": "2025-07-25T11:24:45.958Z",
-      "status": "pending"
-    },
-    {
-      "id": "8629",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "09087654323",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "f1",
-          "imgpath": "/images/men joggers.jpg",
-          "title": "Joggers",
-          "price": "20",
-          "inStock": true,
-          "category": "menCate"
-        }
-      ],
-      "date": "2025-07-25T13:48:51.792Z",
-      "status": "pending"
-    },
-    {
-      "id": "39dc",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "0908765434",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "k2",
-          "imgpath": "/images/baby gown pink.jpg",
-          "title": "Quality pink gown",
-          "price": "15",
-          "inStock": true,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ]
-        },
-        {
-          "id": "x8",
-          "imgpath": "/images/IMG-20241204-WA0045.jpg",
-          "title": "Quality bags",
-          "price": "20",
-          "inStock": false,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ],
-          "category": "mixedCategory"
-        },
-        {
-          "id": "x8",
-          "imgpath": "/images/IMG-20241204-WA0045.jpg",
-          "title": "Quality bags",
-          "price": "20",
-          "inStock": false,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ],
-          "category": "mixedCategory"
-        }
-      ],
-      "date": "2025-07-25T15:49:57.972Z",
-      "status": "pending"
-    },
-    {
-      "id": "d39e",
-      "fullName": "Funmi",
-      "email": "akano@gmail.com",
-      "phone": "0908765434",
-      "address": "20 avenue street sango",
-      "product": [
-        {
-          "id": "k2",
-          "imgpath": "/images/baby gown pink.jpg",
-          "title": "Quality pink gown",
-          "price": "15",
-          "inStock": true,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ]
-        },
-        {
-          "id": "x8",
-          "imgpath": "/images/IMG-20241204-WA0045.jpg",
-          "title": "Quality bags",
-          "price": "20",
-          "inStock": false,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ],
-          "category": "mixedCategory"
-        },
-        {
-          "id": "x8",
-          "imgpath": "/images/IMG-20241204-WA0045.jpg",
-          "title": "Quality bags",
-          "price": "20",
-          "inStock": false,
-          "size": [
-            "SM",
-            "L",
-            "M"
-          ],
-          "category": "mixedCategory"
-        }
-      ],
-      "date": "2025-07-25T15:49:59.240Z",
-      "status": "pending"
-    }
-  ]
+  "order": [ ]
 }

@@ -3,7 +3,7 @@ const Services = () => {
         <section className="services">
             <div className="cake-service-desc">
                 <div className="cake-img">
-                    <img src="/images/cake background.jpg" alt="cake"/>
+                    <img src="/images/cake-background.jpg" alt="cake"/>
                 </div>
                 <div className="cake-advert">
                      <h3>🎂 Cakes for Every Occasion</h3>
@@ -17,7 +17,7 @@ const Services = () => {
             
             <div className="decoration-service-desc">
                 <div className="deco-img">
-                    <img src="/images/deco background.jpg" alt="cake"/>
+                    <img src="/images/deco-background.jpg" alt="cake"/>
                 </div>
                 <div className="deco-advert">
                      <h3>🎉 Event Decorations that Impress</h3>
