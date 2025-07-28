@@ -1,5 +1,5 @@
 import { Link, useNavigate, useSearchParams} from 'react-router-dom';
-import logo from '../images/logo.png';
+
 import { useCart } from '../context';
 import { useState } from 'react';
 
@@ -27,7 +27,7 @@ const Header = () => {
     return ( 
         <header>
             <div className="logo-div">
-                <img src={logo} alt='logo' className='logo'/>
+                <img src="/images/logo.png" alt='logo' className='logo'/>
                 <h2>Lahyor Ventures</h2> 
             </div>
 
