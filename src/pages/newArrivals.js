@@ -6,11 +6,12 @@ import Carousel from "react-multi-carousel";
 import Responsive from "../components/responsive";
 import { useCart } from "../context";
 import UseFetch from "../hooks/UseFetch";
+import BASE_URL from "../config";
 
 
 
 const NewArrivals = () => {
-   const {data:mixedCategory, error, loading} = UseFetch(' http://localhost:4000/mixedCategory')
+   const {data:mixedCategory, error, loading} = UseFetch(`${BASE_URL}/mixedCategory`)
 
 
 

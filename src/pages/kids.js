@@ -1,10 +1,11 @@
 import Card from "../components/card";
 import { useCart } from "../context";
 import UseFetch from "../hooks/UseFetch";
+import BASE_URL from "../config";
 
 const Kids = () => {
     const {addToCart} = useCart();
-    const {data: kids, loading, error} = UseFetch("http://localhost:4000/kids")
+    const {data: kids, loading, error} = UseFetch(`${BASE_URL}/kids`)
 
 
 

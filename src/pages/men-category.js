@@ -8,10 +8,11 @@ import Carousel from 'react-multi-carousel';
 import { useCart } from '../context';
 import UseFetch from '../hooks/UseFetch';
 import UseTitle from '../hooks/useTitle';
+import BASE_URL from '../config';
 
 
 const MenCategory = () => {
-       const {data:menCate, loading, error} = UseFetch('http://localhost:4000/menCate')
+       const {data:menCate, loading, error} = UseFetch(`${BASE_URL}/menCate`)
     
         UseTitle("Men Category")
         const {addToCart} = useCart();

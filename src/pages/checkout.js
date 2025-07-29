@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useCart } from "../context"; 
-import {useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom"
+import BASE_URL from "../config";
 
 const CheckOut = ({setCheckout}) => {
     const navigate = useNavigate();
@@ -12,6 +13,8 @@ const CheckOut = ({setCheckout}) => {
         phone: '',
         address: ''
     });
+
+    
 
     
 
@@ -40,7 +43,7 @@ function handleChange(event){
             status: "pending"
         };
 
-        const resp = await fetch('http://localhost:4000/order', {
+        const resp = await fetch(`${BASE_URL}/order`, {
             method: "POST",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify(order)

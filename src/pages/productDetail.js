@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProductDetailCard from "../components/productDetailCard";
+import BASE_URL from "../config";
 
 const ProductDetail = () => {
     const {id, category} = useParams()
@@ -12,7 +13,7 @@ const ProductDetail = () => {
   useEffect(() => {
         async function getAllProductsDetails() {
             try{
-                const response = await fetch(`http://localhost:4000/${category}/${id}`)
+                const response = await fetch(`${BASE_URL}/${category}/${id}`)
                 if(!response) throw new Error("product not found")
                 const data = await response.json();
                 setProducts({...data, category})

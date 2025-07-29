@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "../components/card";
 import { useCart } from "../context";
+import BASE_URL from "../config";
 
 const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
@@ -12,10 +13,10 @@ const AllProducts = () => {
         async function getAllProducts() {
             try{
                 const [mixedCat, femaleCat, menCat, kids] = await Promise.all([
-                    fetch( 'http://localhost:4000/femaleCate'),
-                    fetch ('http://localhost:4000/menCate'),
-                    fetch  ( 'http://localhost:4000/mixedCategory'),
-                    fetch('http://localhost:4000/kids')
+                    fetch( `${BASE_URL}/femaleCate`),
+                    fetch (`${BASE_URL}/menCate`),
+                    fetch  ( `${BASE_URL}/mixedCategory`),
+                    fetch(`${BASE_URL}/kids`)
                 ]);
 
                 if (!mixedCat.ok || !femaleCat.ok || !menCat.ok || !kids) throw new Error("Failed to Fetch Products");

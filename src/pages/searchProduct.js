@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Card from "../components/card";
 import { useCart } from "../context";
+import BASE_URL from "../config";
 
 const SearchProduct = () => {
   const [searchParams] = useSearchParams();
@@ -25,10 +26,10 @@ const SearchProduct = () => {
 
       try {
         const [female, men, mixed, kids] = await Promise.all([
-          fetch("http://localhost:4000/femaleCate").then((res) => res.json()),
-          fetch("http://localhost:4000/menCate").then((res) => res.json()),
-          fetch("http://localhost:4000/mixedCategory").then((res) => res.json()),
-          fetch("http://localhost:4000/kids").then((res) => res.json()),
+          fetch(`${BASE_URL}/femaleCate`).then((res) => res.json()),
+           fetch(`${BASE_URL}/menCate`).then((res) => res.json()),
+          fetch(`${BASE_URL}/mixedCategory`).then((res) => res.json()),
+          fetch(`${BASE_URL}/kids`).then((res) => res.json()),
         ]);
 
         const allProducts = [...female, ...men, ...mixed, ...kids];

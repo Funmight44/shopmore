@@ -7,16 +7,16 @@ import { useCart } from "../context";
 import UseFetch from "../hooks/UseFetch";
 import UseTitle from "../hooks/useTitle";
 // import products from "../data/products.json"
+import BASE_URL from "../config";
+
 
 
 const FemaleCategory= () => {
     // const{femaleCate} = products
     UseTitle("Female Category")
-    const {data:femaleCate, loading, error} = UseFetch(' http://localhost:4000/femaleCate')
-    
-
+    const {data:femaleCate, loading, error} = UseFetch(`${BASE_URL}/femaleCate`)
     const {addToCart} = useCart();
-
+    console.log(femaleCate)
 
 
     return ( 
